@@ -1,6 +1,7 @@
 from __future__ import division
 from __future__ import print_function
-
+import os
+os.chdir('D:\python workspace\pygcn\pygcn')
 import time
 import argparse
 import numpy as np
@@ -9,8 +10,8 @@ import torch
 import torch.nn.functional as F
 import torch.optim as optim
 
-from pygcn.utils import load_data, accuracy
-from pygcn.models import GCN
+from utils import load_data, accuracy
+from models import GCN
 
 # Training settings
 parser = argparse.ArgumentParser()
